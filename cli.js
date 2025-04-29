@@ -9,6 +9,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const template = path.join(__dirname, "template");
 
 fs.cpSync(template, target, { recursive: true });
-fs.renameSync(path.join(target, "gitignore"), path.join(target, ".gitignore"));
+fs.renameSync(path.join(target, "ignore"), path.join(target, ".gitignore"));
 execSync("npm install", { cwd: target, stdio: "inherit" });
 console.log(`\n ✅ Ready!  cd ${target} && npm run dev`);
