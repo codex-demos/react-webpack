@@ -1,6 +1,6 @@
 {
   "name": "react-webpack-codex",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "type": "module",
   "files": [
     "cli.js",
